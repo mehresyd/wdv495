@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Then add additional custom code here
+
+
+//start of navigation/header css 
+
+header {
+  position: relative;
+}
+
+.navbar {
+  transition: top 0.3s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+#announcement-bar {
+  background-color: #ffdadb;
+  color: #340c0c;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+#announcement-bar p {
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-button a {
+  border: 2px solid #340c0c;
+  color: #340c0c;
+  padding: 7px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.login-button a:hover {
+  background-color: #6e2132;
+  color: #ffffff;
+  border: 2px solid #6e2132;
+}
+
+.cart-button a {
+
+  img {
+    padding-right: 15px;
+  }
+
+}
+
+
+// 
+
+//
+.revealer {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  line-height: 100vh;
+  width: 100vw;
+}
+
+.img-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img-mask img {
+  height: 100vh;
+  width: auto;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 30px;
+  padding: 0 50px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+
+
+  h3 {
+    color: maroon;
+    font-size: 60px;
+     padding-top: 80px;
+    text-align: center;
+    font-family: 'Smooch', cursive;
+  }
+}
+
+.rotate-on-hover {
+  transition: transform 0.5s; 
+}
+
+.rotate-on-hover:hover {
+  transform: rotate(360deg); 
+}
+
+//
+
+//
+html,
+body,
+section.horizontal {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  transition: background-color 1s ease;
+}
+
+
+
+section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+
+section:nth-of-type(even),
+section:nth-of-type(odd) {
+  background-color: #6e2132;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+
+}
+
+
+.blank h1 {
+
+  padding: 80px 180px;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+
+}
+
+.blank {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+section.horizontal {
+  overflow-x: hidden;
+}
+
+section.horizontal .pin-wrap,
+section.horizontal .animation-wrap {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+
+section.horizontal .item {
+  position: relative;
+  padding: 150px 80px;
+  flex: 0 0 500px;
+  display: flex;
+  align-items: center;
+  line-height: 1.7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: transparent;
+}
+
+
+section.horizontal .item:before {
+  position: absolute;
+  font-size: 100px;
+  opacity: .13;
+  font-weight: bold;
+  z-index: -1;
+  -webkit-transform: translate(-30px, -50px);
+  transform: translate(-30px, -50px);
+  line-height: 1;
+}
+
+
+
+section.horizontal .animation-wrap.to-right {
+  /* counter-reset: item;*/
+  float: left;
+}
+
+section.horizontal .animation-wrap.to-left {
+  /* counter-reset: item 11;*/
+  float: right;
+}
+
+
+section.horizontal .animation-wrap .item:nth-child(2n+2) {
+  align-items: flex-start;
+}
+
+section.horizontal .animation-wrap .item:nth-child(4n+4) {
+  align-items: flex-end;
+}
+
+
+.item {
+  position: relative;
+  padding: 0;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+//
+
+
+//
+.ipsType_right {
+  text-align: right;
+}
+
+.ipsType_center {
+  text-align: center;
+}
+
+.cInnerContent {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.ipsSpacer_bottom_double {
+  margin-bottom: 30px;
+}
+
+.ipsGrid {
+  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ipsGrid::before,
+.ipsGrid::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.ipsGrid>[class*="ipsGrid_span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+}
+
+.ipsGrid>.ipsGrid_span5 {
+  width: 40.42553191489362%;
+}
+
+.ipsGrid>.ipsGrid_span7 {
+  width: 57.44680851063829%;
+}
+
+.ipsGrid>[class*="ipsGrid_span"] {
+  float: left;
+  margin-left: 2%;
+}
+
+.ipsGrid>[class*="ipsGrid_span"]:first-child {
+  margin-left: 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px 1px #CCCCCC;
+  /*   transition: 0.3s; */
+}
+
+.featured-image-container .card {
+  padding: 10px;
+  height: 0;
+  padding-bottom: calc(100% - 10px);
+}
+
+.infoHeading{
+  font-size: 2em;
+  font-family: "smooch", cursive;
+  color: #6e2132;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-section {
+  margin: 200px auto;
+}
+
+.articleParagraph {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+  font-family: "Raleway", sans-serif;
+  color: #340c0c;
+  font-weight: 300;
+}
+
+
+
+///
+#container7 {
+
+  position: absolute;
+  margin-top: 50px;
+  width: 100vw;
+  height: 80pt;
+
+  filter: url(#threshold) blur(0.6px);
+}
+
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Smooch', cursive;
+  font-size: 80pt;
+  text-align: center;
+  user-select: none;
+  color: #6e2132;
+}
+//
+
+
+
+//Footer css
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #340c0c;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+//
+
+
+//media queries
+
+/*Smaller than 576 px */
+@media (max-width: 560px) {
+  .login-button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .cart-button {
+    display: none;
+  }
+
+  .overlay>h3 {
+    padding-top: 300px;
+    font-size: 70px;
+  }
+
+  .overlay {
+    margin-left: 24px;
+  }
+
+  .blank {
+    height: 250px;
+  }
+
+  .blank>h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 70px 20px 0 20px;
+  }
+
+
+  section.horizontal .pin-wrap,
+  section.horizontal .animation-wrap {
+    height: 50vh;
+
+  }
+
+  #text1,
+  #text2 {
+    font-size: 50pt;
+
+  }
+
+  .infoHeading {
+    font-size: 30px;
+  }
+
+
+}
+
+
+/*Between 576 px and 991 px */
+@media (min-width: 576px) and (max-width: 991px) {
+
+ .overlay > h3 {
+  margin-top: 200px;
+ }
+
+ 
+ section.horizontal .pin-wrap,
+ section.horizontal .animation-wrap {
+   height: 50vh;
+
+ 
+ }
+
+.infoHeading {
+  font-size: 40px;
+}
+
+
+#text1,
+#text2 {
+  font-size: 55pt;
+
+}
+
+}
+
+/*Between 992 px and 1199 px*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+   section.horizontal .pin-wrap,
+   section.horizontal .animation-wrap {
+     height: 60vh;
+ 
+  
+   }
+  
+  .infoHeading {
+    font-size: 40px;
+  }
+  
+  
+  #text1,
+  #text2 {
+    font-size: 55pt;
+  
+  }
+
+}
+
+/*Larger than 1200 px*/
+@media (min-width: 1200px) {
+
+  .overlay>h3 {
+    padding-top: 190px;
+    font-size: 70px;
+  }
+
+   .overlay {
+    margin-left: 40px;
+   }
+  
+ section.horizontal .pin-wrap,
+  section.horizontal .animation-wrap {
+    height: 70vh;
+    transition: ease 0.3s;
+  }
+ 
+ .infoHeading {
+   font-size: 50px;
+ }
+
+ .articleParagraph {
+  font-size: 20px;
+ }
+ 
+ 
+ #text1,
+ #text2 {
+   font-size: 80pt;
+ 
+ }
+
+
+.special7{
+  margin: 50px auto 0 auto;
+  display: block;
+ }
+
+}
