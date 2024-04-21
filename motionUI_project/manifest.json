@@ -4,7 +4,7 @@
     "short_name": "C.T",
     "description": "Charlotte Tilbury's Makeup",
     "start_url": "/",
-    "background_color": "white",
+    "background_color": "#ffffff",
     "theme_color": "#6e2132",
     "orientation": "any",
     "display": "standalone",
