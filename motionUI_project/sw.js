@@ -18,12 +18,6 @@ self.addEventListener('fetch', event => {
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
 
-    // Check if the request URL uses the "chrome-extension" scheme.
-    if (event.request.url.startsWith('chrome-extension://')) {
-      // Skip caching the resource.
-      return fetch(event.request);
-    }
-
     // Get the resource from the cache.
     const cachedResponse = await cache.match(event.request);
     if (cachedResponse) {
