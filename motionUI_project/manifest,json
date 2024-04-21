@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Charlotte Tilbury",
+    "short_name": "C.T",
+    "description": "Charlotte Tilbury's Makeup",
+    "start_url": "/",
+    "background_color": "white",
+    "theme_color": "#6e2132",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/icons8-lipstick-64.png",
+            "sizes": "70x70"
+        }
+    ]
+}
